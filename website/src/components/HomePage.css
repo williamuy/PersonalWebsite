@@ -1,0 +1,80 @@
+/* HomePage.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f9fafb; /* The light background color */
+}
+
+.hero-content {
+  text-align: center; /* Center the text */
+}
+
+.hero-heading {
+  color: #1a202c; /* Darker text color for the heading */
+  margin-bottom: 0.5rem; /* Space between heading and location */
+}
+
+.hero-location-wrapper {
+  align-items: center;
+  justify-content: center;
+  /* You may not need these styles if you're using Tailwind's flex utilities */
+}
+
+.hero-location-icon {
+  width: 20px; /* Smaller icon size */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 0.25rem; /* Space between icon and text */
+}
+
+.hero-location {
+  color: #4a5568; /* Gray text color for the location */
+  font-size: 1.125rem; /* Larger font size */
+  margin-bottom: 1rem; /* Space between location and subheading */
+}
+
+.hero-subheading {
+  color: #718096; /* Gray text color for the subheading */
+  font-size: 1rem; /* Appropriate font size for the subtext */
+  max-width: 640px; /* Max-width for better readability */
+  margin: 0 auto; /* Center the subheading */
+}
+
+.wind-character {
+  width: 300px; /* Adjust this to change the size of the image */
+  position: absolute;
+  top: 40px; /* Adjust this to move the image up or down */
+}.button-black {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px / 30px; /* Makes the button oval */
+  width: 120px; /* Adjust this to change the size of the button */
+  height: 60px; /* Adjust this to change the size of the button */
+  line-height: 60px; /* Adjust this to vertically center the text */
+}
+
+.button-white {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px / 30px; /* Makes the button oval */
+  width: 120px; /* Adjust this to change the size of the button */
+  height: 60px; /* Adjust this to change the size of the button */
+  line-height: 60px; /* Adjust this to vertically center the text */
+}

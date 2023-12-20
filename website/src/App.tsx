@@ -1,11 +1,19 @@
 import React from 'react';
-import HomePage from './components/HomePage'; // Assuming HomePage is in the same directory
-import './App.css'; // Your main stylesheet
-
+import HomePage from './components/HomePage';
+import About from './components/About';
+import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Navbar from './components/Navbar';
 const App = () => {
   return (
-    <div className="App">
+    <div className="font-sans text-gray-900">
+      <Navbar />
       <HomePage />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Contact />
     </div>
   );
 };

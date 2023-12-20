@@ -1,0 +1,40 @@
+/* animations.css */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Attach the animation to the specific class */
+  .fade-in {
+    opacity: 0; /* Start with text invisible */
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  @keyframes slideInFromLeft {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  .slide-in-left {
+    animation: slideInFromLeft 0.5s ease-out forwards;
+  }
+  
+  .contact-field:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .skill-bar-fill {
+    transition: width 2s ease-in-out;
+  }
+  
+  .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px) rotate(-1deg);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  }
+  
