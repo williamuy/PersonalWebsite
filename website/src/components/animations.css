@@ -37,4 +37,27 @@
     transform: translateY(-5px) rotate(-1deg);
     box-shadow: 0 4px 20px rgba(0,0,0,0.25);
   }
-  
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.typewriter-container h3 {
+  display: inline-block;
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 4s steps(40) 1s infinite normal both,
+             blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+.typewriter-text {
+  color: grey; /* Set the color of the typewriter text */
+  font-weight: bold; /* Optional: makes the text bold */
+  display: inline-block; /* Keeps the blinking cursor aligned */
+}

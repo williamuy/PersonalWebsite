@@ -6,31 +6,30 @@ import ProjectImage3 from './ProjectPic3.png';
 const projectData = [
   {
     title: 'Personal Landing Page',
-    description: 'This is my personal landing page to keep track of my progress. It will be updated with more projects and information as I advance in my career.',
+    description: 'This project is this very website. It will be updated with more projects and information as I advance in my career.',
     image: ProjectImage1,
-    technologies: ['TypeScript','React', 'Tailwind CSS', 'HTML', 'CSS', 'DALL·E 3' ],
+    technologies: ['TypeScript', 'React', 'Tailwind CSS', 'HTML', 'CSS', 'DALL·E 3'],
     status: 'Completed',
     codeLink: 'http://github.com/project-one'
   },
   {
-    title: 'Project Two',
-    description: 'A detailed description of Project Two. This project is focused on frontend technologies and provides a great user experience.',
+    title: 'Laptop Price Analysis',
+    description: 'This project focuses on web scraping, data cleaning, and analysis / visualization on laptop data from Best Buy.',
     image: ProjectImage2,
-    technologies: ['Vue.js', 'Tailwind CSS'],
+    technologies: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'BeautifulSoup', 'Selenium', 'And More...'],
     status: 'Completed',
-    demoLink: 'http://example.com/demo2',
-    codeLink: 'http://github.com/project-two'
+    codeLink: 'https://github.com/williamuy/Laptop-Analysis'
   },
   {
-    title: 'Project Three',
-    description: 'This is an ongoing project that I am currently working on. It aims to solve problems in the data analysis domain.',
+    title: 'Full Stack Study App',
+    description: 'Collaborating with a team to develop a modern day study app.',
     image: ProjectImage3,
-    technologies: ['Python', 'Pandas', 'Jupyter'],
+    technologies: ['TypeScript', 'React', 'Python', 'FastAPI', 'mySQL', 'And More...'],
     status: 'Ongoing',
-    demoLink: 'http://example.com/demo3',
     codeLink: 'http://github.com/project-three'
   },
 ];
+
 const Portfolio = () => {
   return (
     <div className="bg-gray-100 py-8">
@@ -41,7 +40,7 @@ const Portfolio = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectData.map((project, index) => (
-            <div key={index} className="project-card bg-white p-6 rounded-xl shadow-xl">
+            <div key={index} className="project-card bg-white p-6 rounded-xl shadow-xl text-center">
               <img src={project.image} alt={project.title} className="w-full h-auto mb-4 object-cover" />
               <h2 className="text-xl font-semibold">{project.title}</h2>
               <p className="text-md mb-4">{project.description}</p>
@@ -52,14 +51,11 @@ const Portfolio = () => {
                   </li>
                 ))}
               </ul>
-              {project.status === 'Ongoing' && (
+              {project.status === 'Ongoing' ? (
                 <span className="px-3 py-1 text-sm bg-yellow-100 text-yellow-800 rounded-full font-semibold">Ongoing</span>
-              )}
-              <div className="mt-4">
-                {/* Delete the following line */}
-                {/* <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="btn-demo mr-2">View Demo</a> */}
+              ) : (
                 <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="btn-code">View Code</a>
-              </div>
+              )}
             </div>
           ))}
         </div>

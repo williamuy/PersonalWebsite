@@ -17,7 +17,7 @@ const SkillsPage = () => {
               <FaCode size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Frontend Development</h2>
-            <p className="text-md">React, Vue.js, HTML, CSS, Tailwind</p>
+            <p className="text-md">Typescript, React, Tailwind CSS, HTML, Blazor</p>
           </div>
           {/* Skill Card for Databases */}
           <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
@@ -25,7 +25,7 @@ const SkillsPage = () => {
               <FaDatabase size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Databases</h2>
-            <p className="text-md">MySQL, MongoDB, SQL Server</p>
+            <p className="text-md">MySQL</p>
           </div>
           {/* Skill Card for Backend */}
           <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
@@ -33,7 +33,7 @@ const SkillsPage = () => {
               <FaServer size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Backend Development</h2>
-            <p className="text-md">Node.js, Express, API Development</p>
+            <p className="text-md">FastAPI</p>
           </div>
           {/* Data Science Card */}
           <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
@@ -41,7 +41,7 @@ const SkillsPage = () => {
               <FaChartBar size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Data Science</h2>
-            <p className="text-md">Machine Learning, Statistics, Data Visualization</p>
+            <p className="text-md">Pandas, Numpy, Matplotlib, Seaborn </p>
           </div>
           {/* Programming Languages Card */}
           <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
@@ -49,7 +49,7 @@ const SkillsPage = () => {
               <FaPython size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Programming Languages</h2>
-            <p className="text-md">Python, TypeScript, Java</p>
+            <p className="text-md">Python, TypeScript, Java, SQL</p>
           </div>
                 {/* Current Learning Card */}
                 <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
@@ -57,7 +57,7 @@ const SkillsPage = () => {
               <FaBookOpen size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Current Learning</h2>
-            <p className="text-md">Docker, Kubernetes, AWS</p>
+            <p className="text-md">Neural Networks, MongoDB, AWS</p>
           </div>
         </div>
       </main>

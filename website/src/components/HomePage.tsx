@@ -6,12 +6,16 @@ import LinkedInIcon from './LinkedInIcon.svg';
 import GitHubIcon from './GitHubIcon.svg';
 import './animations.css';
 import { MdLocationOn } from 'react-icons/md'; // Import location icon
+import Typewriter from './Typewriter'; // Import the Typewriter component
+
+// Add your technologies here
+const technologies = ["TypeScript", "React", "Tailwind CSS", "DALL·E 3", ]; 
 
 const Home = () => {
   return (
     <div id="home" className="hero-container">
       <img src={WindCharacter} alt="Wind Character" className="wind-character fade-in" style={{ animationDelay: '1.8s' }} />
-      <div className="hero-content">
+      <div className="hero-content mt-10">
         <h1 className="hero-heading fade-in" style={{ animationDelay: '0.6s' }}>Hi, I'm William.</h1>
         <p className="hero-location fade-in" style={{ animationDelay: '0.9s' }}><MdLocationOn /> Seattle, WA</p>
         <p className="hero-subheading fade-in" style={{ animationDelay: '1.2s' }}>
@@ -29,7 +33,11 @@ const Home = () => {
             <img src={GitHubIcon} alt="GitHub" className="social-icon" /> GitHub
           </a>
         </div>
-      </div>
+        {/* Typewriter effect for showcasing technologies */}
+        <div className="typewriter-container fade-in mt-4" style={{ animationDelay: '2.1s' }}>
+        <Typewriter words={technologies} loop={true} />
+</div>
+        </div>
     </div>
   );
 };
