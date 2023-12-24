@@ -1,65 +1,35 @@
 import React from 'react';
-import './HomePage.css'; 
-import './animations.css';
+import './HomePage.css';
 import WindCharacter from './WindCharacter.png';
-import MainChraceter from './MainCharacter.png';
+import Button from './Button';
+import LinkedInIcon from './LinkedInIcon.svg';
+import GitHubIcon from './GitHubIcon.svg';
+import './animations.css';
+import { MdLocationOn } from 'react-icons/md'; // Import location icon
 
 const Home = () => {
   return (
-    <div id="home" className="min-h-screen bg-gray-100 flex flex-col justify-center items-center text-center px-4 relative">
-
-      <div className="flex items-center justify-center space-x-4 fade-in" style={{ animationDelay: '0.3s' }}>
-
-        <img src={WindCharacter} alt="Wind Character" className="wind-character" />
-
-        <div>
-          <h1 className="text-6xl font-bold text-gray-800">  
-            Hi, I'm William.
-          </h1>
-          
-          <p className="text-gray-500 mt-2">
-            Seattle, WA
-          </p>
-        
-          <p className="text-lg text-gray-700 mt-4">
+    <div id="home" className="hero-container">
+      <img src={WindCharacter} alt="Wind Character" className="wind-character fade-in" style={{ animationDelay: '1.8s' }} />
+      <div className="hero-content">
+        <h1 className="hero-heading fade-in" style={{ animationDelay: '0.6s' }}>Hi, I'm William.</h1>
+        <p className="hero-location fade-in" style={{ animationDelay: '0.9s' }}><MdLocationOn /> Seattle, WA</p>
+        <p className="hero-subheading fade-in" style={{ animationDelay: '1.2s' }}>
           I'm currently a student at the University of Washington, where I specialize in Data Science and Software Development 🚀
-          </p>
-          
-          
-          <div style={{marginTop: '2rem'}}>
-
-            <button
-              style={{
-                backgroundColor: 'black',
-                color: 'white',
-                padding: '12px 24px',
-                borderRadius: '4px',
-                border: 'none',
-                fontSize: '16px'  
-              }}  
-            >
-              Download CV
-            </button>
-
-            <button 
-              style={{
-                backgroundColor: 'white', 
-                color: 'black',
-                padding: '12px 24px',
-                borderRadius: '4px',
-                border: '2px solid black',
-                fontSize: '16px', 
-                marginLeft: '1rem'
-              }}
-            >
-              Contact Info
-            </button>
-
-          </div>
-          
+        </p>
+        <div className="button-group fade-in" style={{ animationDelay: '1.5s' }}>
+          <Button color="black">Download CV</Button>
+          <Button color="white">Contact Info</Button>
+        </div>
+        <div className="social-buttons fade-in" style={{ animationDelay: '1.8s' }}>
+          <a href="https://www.linkedin.com/in/william-uyeta-/" target="_blank" rel="noopener noreferrer" className="social-button">
+            <img src={LinkedInIcon} alt="LinkedIn" className="social-icon" /> LinkedIn
+          </a>
+          <a href="https://github.com/williamuy" target="_blank" rel="noopener noreferrer" className="social-button">
+            <img src={GitHubIcon} alt="GitHub" className="social-icon" /> GitHub
+          </a>
         </div>
       </div>
-
     </div>
   );
 };

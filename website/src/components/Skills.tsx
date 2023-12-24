@@ -1,21 +1,68 @@
 import React from 'react';
-import './animations.css'; // Importing the animations styles
+import './Skills.css'; // Ensure you have this CSS file for any additional styles
+import { FaBriefcase, FaGraduationCap, FaCode, FaDatabase, FaServer, FaChartBar, FaPython, FaBookOpen } from 'react-icons/fa';
 
-const Skills = () => {
+const SkillsPage = () => {
   return (
-    <div id="skills" className="bg-gray-50 py-12 px-4">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4 slide-in-left">Skills</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {/* Replace with actual skills and use inline styles to set the `--skill-level` custom property */}
-          <div className="skill-bar bg-gray-300 rounded-full overflow-hidden">
-            <div className="skill-bar-fill bg-blue-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none" style={{ width: '90%' }}>Data Science 90%</div>
-          </div>
-          {/* Repeat for other skills */}
+    <div className="bg-gray-100 py-8">
+      <main id="skills" className="mx-auto px-4 max-w-7xl">
+        <div className="text-center mb-12">
+          <p className="text-lg text-gray-600">Explore My</p>
+          <h1 className="text-5xl text-gray-800 font-bold">Skill Set</h1>
         </div>
-      </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Skill Card for Coding */}
+          <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
+            <span className="text-indigo-600">
+              <FaCode size={50} />
+            </span>
+            <h2 className="text-xl font-semibold mt-4">Frontend Development</h2>
+            <p className="text-md">React, Vue.js, HTML, CSS, Tailwind</p>
+          </div>
+          {/* Skill Card for Databases */}
+          <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
+            <span className="text-green-600">
+              <FaDatabase size={50} />
+            </span>
+            <h2 className="text-xl font-semibold mt-4">Databases</h2>
+            <p className="text-md">MySQL, MongoDB, SQL Server</p>
+          </div>
+          {/* Skill Card for Backend */}
+          <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
+            <span className="text-red-600">
+              <FaServer size={50} />
+            </span>
+            <h2 className="text-xl font-semibold mt-4">Backend Development</h2>
+            <p className="text-md">Node.js, Express, API Development</p>
+          </div>
+          {/* Data Science Card */}
+          <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
+            <span className="text-blue-600">
+              <FaChartBar size={50} />
+            </span>
+            <h2 className="text-xl font-semibold mt-4">Data Science</h2>
+            <p className="text-md">Machine Learning, Statistics, Data Visualization</p>
+          </div>
+          {/* Programming Languages Card */}
+          <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
+            <span className="text-yellow-600">
+              <FaPython size={50} />
+            </span>
+            <h2 className="text-xl font-semibold mt-4">Programming Languages</h2>
+            <p className="text-md">Python, TypeScript, Java</p>
+          </div>
+                {/* Current Learning Card */}
+                <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
+            <span className="text-purple-600">
+              <FaBookOpen size={50} />
+            </span>
+            <h2 className="text-xl font-semibold mt-4">Current Learning</h2>
+            <p className="text-md">Docker, Kubernetes, AWS</p>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
 
-export default Skills;
+export default SkillsPage;

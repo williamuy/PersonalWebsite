@@ -5,6 +5,8 @@ import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import Experience from './components/Experience';
+import Footer from './components/Footer';
 const App = () => {
   return (
     <div className="font-sans text-gray-900">
@@ -13,7 +15,9 @@ const App = () => {
       <About />
       <Skills />
       <Portfolio />
+      <Experience />
       <Contact />
+      <Footer />
     </div>
   );
 };
