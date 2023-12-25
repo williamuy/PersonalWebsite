@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectImage1 from './ProjectPic1.png'; // Replace with your actual project image paths
 import ProjectImage2 from './ProjectPic2.png';
 import ProjectImage3 from './ProjectPic3.png';
-
+import './Portfolio.css';
 const projectData = [
   {
     title: 'Personal Landing Page',
@@ -10,13 +10,13 @@ const projectData = [
     image: ProjectImage1,
     technologies: ['TypeScript', 'React', 'Tailwind CSS', 'HTML', 'CSS', 'DALL·E 3'],
     status: 'Completed',
-    codeLink: 'http://github.com/project-one'
+    codeLink: 'https://github.com/williamuy/PersonalWebsite'
   },
   {
     title: 'Laptop Price Analysis',
     description: 'This project focuses on web scraping, data cleaning, and analysis / visualization on laptop data from Best Buy.',
     image: ProjectImage2,
-    technologies: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'BeautifulSoup', 'Selenium', 'And More...'],
+    technologies: ['Numpy', 'Pandas', 'Matplotlib', 'Seaborn', 'BeautifulSoup', 'Selenium', 'And More...'],
     status: 'Completed',
     codeLink: 'https://github.com/williamuy/Laptop-Analysis'
   },
@@ -35,7 +35,7 @@ const Portfolio = () => {
     <div className="bg-gray-100 py-8">
       <main id="projects" className="mx-auto px-4 max-w-7xl">
         <div className="text-center mb-12">
-          <p className="text-lg text-gray-600">Showcasing My Work</p>
+          <p className="text-lg text-gray-600">Showcasing My</p>
           <h1 className="text-5xl text-gray-800 font-bold">Projects</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

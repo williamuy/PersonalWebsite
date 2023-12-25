@@ -15,7 +15,7 @@ const Typewriter: React.FC<TypewriterProps> = ({ words, loop = false }) => {
     useEffect(() => {
         const timeout = setTimeout(() => {
           setBlink(!blink);
-        }, 2500);
+        }, 500);
         return () => clearTimeout(timeout);
       }, [blink]);
 

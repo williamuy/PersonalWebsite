@@ -1,3 +1,64 @@
-.nav-link {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-  }
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  /* Added styles */
+  display: flex;
+  align-items: center;
+  height: 60px; /* Adjust the height as needed */
+}
+
+.menu-button {
+  font-size: 24px;
+  background: #fff; /* White background */
+  border: none;
+  cursor: pointer;
+  border-radius: 50%; /* Circular shape */
+  width: 50px; /* Circle size */
+  height: 50px; /* Circle size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds shadow for depth */
+  margin-top: 20px; /* Distance from the top */
+  margin-right: 20px; /* Distance from the right */
+  /* Ensure that button is not too far left */
+  right: 5px; /* Distance from the right */
+  position: absolute;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 10px); /* Positioned below the button with a little space */
+  right: 20px; /* Align with the button */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.687);
+  width: auto;
+  text-align: left;
+  margin-top: 35px;
+  /* ... Other styles remain the same ... */
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  /* ... Other styles remain the same ... */
+}
+
+.dropdown a:last-child {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  background-color: #f7f7f7;
+}
+

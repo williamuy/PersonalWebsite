@@ -10,11 +10,11 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} William Uyeta. All rights reserved.
           </p>
           <div className="mt-4">
-            <a href="https://linkedin.com/in/yourprofile" className="text-gray-600 hover:text-gray-800 mx-2">
+            <a href="https://www.linkedin.com/in/william-uyeta-/" className="text-gray-600 hover:text-gray-800 mx-2">
               {/* Replace with actual icons from whatever icon library you're using */}
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/yourprofile" className="text-gray-600 hover:text-gray-800 mx-2">
+            <a href="https://github.com/williamuy" className="text-gray-600 hover:text-gray-800 mx-2">
               <i className="fab fa-github"></i>
             </a>
             {/* Add any other social media or contact links here */}

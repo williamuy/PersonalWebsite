@@ -1,0 +1,54 @@
+/* Contact.css */
+.contact-container {
+    background-color: #f3f3f3; /* Or your preferred background color */
+    padding: 50px 0;
+    text-align: center; /* Centering text */
+  }
+  
+  .contact-content {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .contact-heading {
+    font-size: 3rem; /* Make it larger or as per your site's theme */
+    color: #333; /* Adjust if needed */
+    margin-bottom: 1rem; /* Add more space below the heading */
+  }
+  
+  .contact-description {
+    margin-bottom: 2rem; /* Increase the space between text and button */
+    color: #555;
+    font-size: 1.125rem; /* Increase the font size if needed */
+  }
+  
+  .contact-email-button {
+    background-color: #007bff; /* Match this with your site's theme */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem; /* Match the border-radius with other buttons */
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: 500; /* Optional: to match the font-weight with other buttons */
+  }
+  
+  .contact-email-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  .contact-subheading {
+    /* Add any additional styles you have for subheadings on other pages */
+  }
+  
+  /* Additional styles for centering and consistent theming */
+  .page-heading {
+    @apply text-5xl text-gray-800 font-bold;
+    /* Add any additional shared styles for page headings */
+  }
+  
+  /* Ensure that all text is centered within the container */
+  .text-center {
+    text-align: center;
+  }
+  
