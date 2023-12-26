@@ -1,3 +1,6 @@
+/* Experience.css */
+
+/* The span elements within the tech-list class. */
 .tech-list span {
-    cursor: default;
-  }
+  cursor: default; /* Sets the cursor to the default cursor when hovering over the span elements. This indicates that the span elements are not clickable. */
+}

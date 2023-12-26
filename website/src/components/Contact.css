@@ -1,54 +1,61 @@
 /* Contact.css */
+
+/* The main container for the contact section. */
 .contact-container {
-    background-color: #f3f3f3; /* Or your preferred background color */
-    padding: 50px 0;
-    text-align: center; /* Centering text */
-  }
-  
-  .contact-content {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  .contact-heading {
-    font-size: 3rem; /* Make it larger or as per your site's theme */
-    color: #333; /* Adjust if needed */
-    margin-bottom: 1rem; /* Add more space below the heading */
-  }
-  
-  .contact-description {
-    margin-bottom: 2rem; /* Increase the space between text and button */
-    color: #555;
-    font-size: 1.125rem; /* Increase the font size if needed */
-  }
-  
-  .contact-email-button {
-    background-color: #007bff; /* Match this with your site's theme */
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.375rem; /* Match the border-radius with other buttons */
-    text-decoration: none;
-    transition: background-color 0.3s;
-    font-weight: 500; /* Optional: to match the font-weight with other buttons */
-  }
-  
-  .contact-email-button:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
-  }
-  
-  .contact-subheading {
-    /* Add any additional styles you have for subheadings on other pages */
-  }
-  
-  /* Additional styles for centering and consistent theming */
-  .page-heading {
-    @apply text-5xl text-gray-800 font-bold;
-    /* Add any additional shared styles for page headings */
-  }
-  
-  /* Ensure that all text is centered within the container */
-  .text-center {
-    text-align: center;
-  }
-  
+  background-color: #f3f3f3; /* Sets the background color of the contact section. */
+  padding: 50px 0; /* Adds padding to the top and bottom of the container. */
+  text-align: center; /* Centers the text horizontally. */
+}
+
+/* The container for the contact content. */
+.contact-content {
+  max-width: 600px; /* Limits the maximum width of the content. */
+  margin: auto; /* Centers the content horizontally. */
+  padding: 20px; /* Adds padding around the content. */
+}
+
+/* The heading of the contact section. */
+.contact-heading {
+  font-size: 3rem; /* Sets the font size of the heading. */
+  color: #333; /* Sets the color of the heading. */
+  margin-bottom: 1rem; /* Adds space below the heading. */
+}
+
+/* The description text in the contact section. */
+.contact-description {
+  margin-bottom: 2rem; /* Adds space below the description text. */
+  color: #555; /* Sets the color of the description text. */
+  font-size: 1.125rem; /* Sets the font size of the description text. */
+}
+
+/* The email button in the contact section. */
+.contact-email-button {
+  background-color: #007bff; /* Sets the background color of the button. */
+  color: white; /* Sets the color of the button text. */
+  padding: 0.75rem 1.5rem; /* Adds padding inside the button. */
+  border-radius: 0.375rem; /* Rounds the corners of the button. */
+  text-decoration: none; /* Removes the default underline from the button text. */
+  transition: background-color 0.3s; /* Adds a transition effect when the button's background color changes. */
+  font-weight: 500; /* Sets the font weight of the button text. */
+}
+
+/* The hover state of the email button. */
+.contact-email-button:hover {
+  background-color: #0056b3; /* Changes the background color of the button when it's hovered over. */
+}
+
+/* The subheading of the contact section. */
+.contact-subheading {
+  /* Add any additional styles you have for subheadings on other pages */
+}
+
+/* The heading of the page. */
+.page-heading {
+  @apply text-5xl text-gray-800 font-bold; /* Applies utility classes to style the page heading. */
+  /* Add any additional shared styles for page headings */
+}
+
+/* A utility class for centering text. */
+.text-center {
+  text-align: center; /* Centers the text horizontally. */
+}

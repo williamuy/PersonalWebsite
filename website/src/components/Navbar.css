@@ -1,64 +1,77 @@
 /* Navbar.css */
 
+/* Navbar container */
 .navbar {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1000;
-  /* Added styles */
   display: flex;
   align-items: center;
-  height: 60px; /* Adjust the height as needed */
+  /* Adjust the height to change the size of the navbar */
+  height: 60px;
 }
 
+/* Menu button */
 .menu-button {
   font-size: 24px;
-  background: #fff; /* White background */
+  background: #fff;
   border: none;
   cursor: pointer;
-  border-radius: 50%; /* Circular shape */
-  width: 50px; /* Circle size */
-  height: 50px; /* Circle size */
+  /* Adjust border-radius to change the shape of the button */
+  border-radius: 50%;
+  /* Adjust width and height to change the size of the button */
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds shadow for depth */
-  margin-top: 20px; /* Distance from the top */
-  margin-right: 20px; /* Distance from the right */
-  /* Ensure that button is not too far left */
-  right: 5px; /* Distance from the right */
+  /* Adjust box-shadow to change the depth effect of the button */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  /* Adjust margin-top and margin-right to change the position of the button */
+  margin-top: 20px;
+  margin-right: 20px;
+  /* Adjust right to ensure the button is not too far left */
+  right: 5px;
   position: absolute;
 }
 
+/* Dropdown menu */
 .dropdown {
   position: absolute;
-  top: calc(100% + 10px); /* Positioned below the button with a little space */
-  right: 20px; /* Align with the button */
+  /* Adjust top to change the position of the dropdown relative to the button */
+  top: calc(100% + 10px);
+  /* Adjust right to align the dropdown with the button */
+  right: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
+  /* Adjust box-shadow to change the depth effect of the dropdown */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.687);
   width: auto;
   text-align: left;
+  /* Adjust margin-top to change the position of the dropdown relative to the navbar */
   margin-top: 35px;
-  /* ... Other styles remain the same ... */
 }
 
+/* Dropdown links */
 .dropdown a {
   display: block;
+  /* Adjust padding to change the space around the links */
   padding: 10px 20px;
   text-decoration: none;
   color: #333;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
-  /* ... Other styles remain the same ... */
 }
 
+/* Last dropdown link */
 .dropdown a:last-child {
   border-bottom: none;
 }
 
+/* Hover effect for dropdown links */
 .dropdown a:hover {
+  /* Adjust background-color to change the hover color of the links */
   background-color: #f7f7f7;
 }
-

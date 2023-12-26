@@ -1,20 +1,26 @@
-/* HomePage.css */
+/* Base import of Tailwind CSS */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Styling for the main hero container */
 .hero-container {
+  /* Adjust min-h-screen to change the minimum height of the container */
   @apply min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4 relative;
 }
 
+/* Content within the hero container */
 .hero-content {
   @apply text-center;
 }
 
+/* Heading style */
 .hero-heading {
+  /* Adjust text-6xl to change the font size of the heading */
   @apply text-6xl font-bold text-gray-800 mb-2;
 }
 
+/* Location display with icon */
 .hero-location {
   @apply text-gray-500;
   display: flex;
@@ -22,23 +28,32 @@
   justify-content: center;
 }
 
+/* Location icon margin */
 .hero-location svg {
+  /* Adjust margin-right to change the space to the right of the icon */
   margin-right: 5px;
 }
 
+/* Subheading style */
 .hero-subheading {
+  /* Adjust text-lg to change the font size of the subheading */
   @apply text-lg text-gray-700 my-4 max-w-lg mx-auto;
 }
 
+/* Styling for the wind character image */
 .wind-character {
+  /* Adjust w-64 to change the width of the image */
   @apply w-64 absolute top-10;
 }
 
+/* Button group styling */
 .button-group {
   @apply flex justify-center items-center gap-4;
 }
 
+/* Styling for black and white buttons */
 .button-black, .button-white {
+  /* Adjust text-lg to change the font size of the buttons */
   @apply text-lg font-semibold py-3 px-6 rounded transition-colors duration-300;
 }
 
@@ -50,26 +65,31 @@
   @apply bg-white text-black border-2 border-black ml-4;
 }
 
+/* Adjust the wind character's width and position */
 .wind-character {
-  width: 300px; /* Adjust this to change the size of the image */
+  width: 300px; /* Change the size of the image */
   position: absolute;
-  top: 20px; /* Adjust this to move the image up or down */
+  top: 20px; /* Move the image up or down */
 }
-/* HomePage.css */
+
+/* Styling for social media buttons */
 .social-buttons {
   @apply mt-4 flex justify-center items-center gap-4;
 }
 
 .social-button {
+  /* Adjust px-4 and py-2 to change the padding of the buttons */
   @apply flex items-center justify-center px-4 py-2 border rounded text-sm font-medium transition-colors duration-300;
   text-decoration: none;
 }
 
 .social-icon {
+  /* Adjust h-5 and w-5 to change the size of the icons */
   @apply mr-2 h-5 w-5;
 }
 
-/* Add styles for hover effects */
+/* Hover effects for social buttons */
 .social-button:hover {
-  background-color: #ebebeb; /* Example hover color, adjust as needed */
+  /* Adjust #ebebeb to change the hover color of the buttons */
+  background-color: #ebebeb;
 }

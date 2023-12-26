@@ -1,63 +1,77 @@
 /* animations.css */
+
+/* Fade in animation */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  /* Attach the animation to the specific class */
-  .fade-in {
-    opacity: 0; /* Start with text invisible */
-    animation: fadeIn 1.5s ease-in-out forwards;
-  }
-  @keyframes slideInFromLeft {
-    0% { transform: translateX(-100%); opacity: 0; }
-    100% { transform: translateX(0); opacity: 1; }
-  }
-  
-  .slide-in-left {
-    animation: slideInFromLeft 0.5s ease-out forwards;
-  }
-  
-  .contact-field:focus {
-    outline: none;
-    border-color: #4a90e2;
-    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.4);
-    transition: box-shadow 0.3s ease-in-out;
-  }
-  
-  .skill-bar-fill {
-    transition: width 2s ease-in-out;
-  }
-  
-  .project-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px) rotate(-1deg);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-  }
+  from { opacity: 0; } /* Start with text invisible */
+  to { opacity: 1; } /* End with text visible */
+}
+
+/* Class to apply fade in animation */
+.fade-in {
+  opacity: 0; /* Start with text invisible */
+  animation: fadeIn 1.5s ease-in-out forwards; /* Apply the fadeIn animation */
+}
+
+/* Slide in from left animation */
+@keyframes slideInFromLeft {
+  0% { transform: translateX(-100%); opacity: 0; } /* Start from left and invisible */
+  100% { transform: translateX(0); opacity: 1; } /* End at original position and visible */
+}
+
+/* Class to apply slide in from left animation */
+.slide-in-left {
+  animation: slideInFromLeft 0.5s ease-out forwards; /* Apply the slideInFromLeft animation */
+}
+
+/* Styling for focused contact field */
+.contact-field:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.4);
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for box-shadow */
+}
+
+/* Transition for skill bar fill width */
+.skill-bar-fill {
+  transition: width 2s ease-in-out; /* Smooth transition for width */
+}
+
+/* Transition for project card transform and box-shadow */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for transform and box-shadow */
+}
+
+/* Styling for project card on hover */
+.project-card:hover {
+  transform: translateY(-5px) rotate(-1deg); /* Move up and rotate slightly */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25); /* Add shadow */
+}
+
+/* Typewriter animation */
 @keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
+from { width: 0; } /* Start with no width */
+to { width: 100%; } /* End with full width */
 }
 
+/* Styling for typewriter container */
 .typewriter-container h3 {
-  display: inline-block;
-  border-right: 2px solid;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 4s steps(40) 1s infinite normal both,
-             blink-caret .75s step-end infinite;
+display: inline-block;
+border-right: 2px solid;
+white-space: nowrap;
+overflow: hidden;
+animation: typewriter 4s steps(40) 1s infinite normal both, /* Apply the typewriter animation */
+           blink-caret .75s step-end infinite; /* Apply the blink-caret animation */
 }
 
+/* Blink caret animation */
 @keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: black; }
+from, to { border-color: transparent; } /* Start and end with transparent border color */
+50% { border-color: black; } /* At 50%, make the border color black */
 }
 
+/* Styling for typewriter text */
 .typewriter-text {
-  color: grey; /* Set the color of the typewriter text */
-  font-weight: bold; /* Optional: makes the text bold */
-  display: inline-block; /* Keeps the blinking cursor aligned */
+color: grey; /* Set the color of the typewriter text */
+font-weight: bold; /* Optional: makes the text bold */
+display: inline-block; /* Keeps the blinking cursor aligned */
 }

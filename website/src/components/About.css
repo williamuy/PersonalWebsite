@@ -1,56 +1,43 @@
-/* AboutPage.css - TailwindCSS Version */
+/* Import TailwindCSS base, components, and utilities */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-/* TailwindCSS doesn't have a built-in `font-normal` utility for font-weight, 
-   so you might need to use custom CSS for that or extend your Tailwind config. */
-   @import 'tailwindcss/base';
-   @import 'tailwindcss/components';
-   @import 'tailwindcss/utilities';
-
-/* Custom CSS may still be required for specific styles */
-
-
+/* Custom CSS for profile image */
 .profile-img {
-    width: 250px; /* Custom width */
-    height: 250px; /* Custom height */
-  }
-
-
-  .center-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Adjust as needed */
-  }
-
-  
-  .hero-container {
-    @apply min-h-screen flex flex-col items-center justify-center bg-gray-100 py-4 relative;
-  }
-  .about-card {
-    border: 1px solid black;
-    /* ...rest of your styles... */
-  }
-  
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align items to the start */
-  }
-  
-/* AboutPage.css */
-
-/* ... existing styles ... */
-
-.about-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  border: 1px solid #000; /* Example border */
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 250px; /* Set the width of the profile image */
+    height: 250px; /* Set the height of the profile image */
 }
 
-/* Adjust your icon sizes in your JSX as needed, or use a custom class to control the size */
+/* Custom CSS for centering content */
+.center-content {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100%; /* Take up full height of parent */
+}
+
+/* Custom CSS for hero container */
+.hero-container {
+    @apply min-h-screen flex flex-col items-center justify-center bg-gray-100 py-4 relative; /* Apply TailwindCSS classes */
+}
+
+/* Custom CSS for about card */
+.about-card {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: start; /* Align items to the start vertically */
+    border: 1px solid #000; /* Add a border */
+    padding: 2rem; /* Add padding */
+    border-radius: 0.5rem; /* Round the corners */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Add a shadow */
+}
+
+/* Custom CSS for flex container */
+.flex-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly along the main axis */
+    align-items: flex-start; /* Align items to the start of the cross axis */
+}

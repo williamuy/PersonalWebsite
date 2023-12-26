@@ -1,7 +1,13 @@
 import React from 'react';
 import './Skills.css'; // Ensure you have this CSS file for any additional styles
-import { FaBriefcase, FaGraduationCap, FaCode, FaDatabase, FaServer, FaChartBar, FaPython, FaBookOpen } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaServer, FaChartBar, FaPython, FaBookOpen } from 'react-icons/fa';
 
+/**
+ * SkillsPage component for the website.
+ * It displays a list of skills.
+ * 
+ * @returns JSX.Element The SkillsPage component as a JSX Element.
+ */
 const SkillsPage = () => {
   return (
     <div className="bg-gray-100 py-8">
@@ -51,8 +57,8 @@ const SkillsPage = () => {
             <h2 className="text-xl font-semibold mt-4">Programming Languages</h2>
             <p className="text-md">Python, TypeScript, Java, SQL</p>
           </div>
-                {/* Current Learning Card */}
-                <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
+          {/* Current Learning Card */}
+          <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
             <span className="text-purple-600">
               <FaBookOpen size={50} />
             </span>
@@ -65,4 +71,5 @@ const SkillsPage = () => {
   );
 };
 
+// Export the SkillsPage component as the default export
 export default SkillsPage;

@@ -1,23 +1,34 @@
 import React, { useState, useEffect } from 'react';
 
+/**
+ * TypewriterProps interface for Typewriter component.
+ * It defines the types of the props that the Typewriter component expects.
+ */
 interface TypewriterProps {
   words: string[];
   loop?: boolean;
 }
 
+/**
+ * Typewriter component for the website.
+ * It displays a list of words with a typewriter effect.
+ * 
+ * @param {TypewriterProps} props The props that this component expects.
+ * @returns JSX.Element The Typewriter component as a JSX Element.
+ */
 const Typewriter: React.FC<TypewriterProps> = ({ words, loop = false }) => {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [reverse, setReverse] = useState(false);
   const [blink, setBlink] = useState(true);
 
-    // Blinking cursor effect
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-          setBlink(!blink);
-        }, 500);
-        return () => clearTimeout(timeout);
-      }, [blink]);
+  // Blinking cursor effect
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setBlink(!blink);
+    }, 500);
+    return () => clearTimeout(timeout);
+  }, [blink]);
 
   // Typing effect
   useEffect(() => {
@@ -54,4 +65,5 @@ const Typewriter: React.FC<TypewriterProps> = ({ words, loop = false }) => {
   );
 };
 
+// Export the Typewriter component as the default export
 export default Typewriter;

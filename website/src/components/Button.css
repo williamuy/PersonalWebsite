@@ -1,3 +1,9 @@
+/* 
+  The .button-black class is used to style a button with a black background.
+  The text color is white.
+  The button is displayed as an inline-block element with a specific width, height, and line-height.
+  The border-radius property is used to make the button oval-shaped.
+*/
 .button-black {
   background-color: black;
   border: none;
@@ -13,6 +19,12 @@
   line-height: 60px; /* Adjust this to vertically center the text */
 }
 
+/* 
+  The .button-white class is used to style a button with a white background.
+  The text color is black.
+  The button is displayed as an inline-block element with a specific width, height, and line-height.
+  The border-radius property is used to make the button oval-shaped.
+*/
 .button-white {
   background-color: white;
   border: none;
