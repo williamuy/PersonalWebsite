@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <div id="home" className="hero-container">
       {/* Character image with fade-in animation */}
-      <img src={WindCharacter} alt="Wind Character" className="wind-character fade-in" style={{ animationDelay: '1.8s' }} />
+      <img src={WindCharacter} alt="Wind Character" className="wind-character fade-in" style={{ animationDelay: '.7s' }} />
 
       {/* Main content area */}
       <div className="hero-content mt-10">
@@ -44,7 +44,7 @@ const Home = () => {
         </div>
 
         {/* Social media links with fade-in animation */}
-        <div className="social-buttons fade-in" style={{ animationDelay: '1.2s' }}>
+        <div className="social-buttons fade-in" style={{ animationDelay: '.7s' }}>
           <a href="https://www.linkedin.com/in/william-uyeta-/" target="_blank" rel="noopener noreferrer" className="social-button">
             <img src={LinkedInIcon} alt="LinkedIn" className="social-icon" /> LinkedIn
           </a>
@@ -54,7 +54,7 @@ const Home = () => {
         </div>
 
         {/* Typewriter effect for technology display */}
-        <div className="typewriter-container fade-in mt-4" style={{ animationDelay: '1.2s' }}>
+        <div className="typewriter-container fade-in mt-4" style={{ animationDelay: '.7s' }}>
           <Typewriter words={technologies} loop={true} />
         </div>
       </div>
