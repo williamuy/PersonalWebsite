@@ -4,3 +4,22 @@
 .tech-list span {
   cursor: default; /* Sets the cursor to the default cursor when hovering over the span elements. This indicates that the span elements are not clickable. */
 }
+/* Adjust the size and position of the logo for smaller screens */
+@media (max-width: 600px) {
+  .experience-card img {
+    width: 12vw; /* Adjust the width */
+    height: 12vw; /* Adjust the height */
+    top: -5px; /* Adjust the top position */
+    right: -10px; /* Adjust the right position */
+  }
+
+  /* Adjust the font size of the role title for smaller screens */
+  .experience-card h2 {
+    font-size: 1.1rem; /* Adjust the font size */
+  }
+
+  /* Adjust the font size of the company name for smaller screens */
+  .experience-card h3 {
+    font-size: 1rem; /* Adjust the font size */
+  }
+}

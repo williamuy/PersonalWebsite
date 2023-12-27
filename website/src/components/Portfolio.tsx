@@ -1,7 +1,7 @@
 import React from 'react';
-import ProjectImage1 from './ProjectPic1.png'; // Replace with your actual project image paths
-import ProjectImage2 from './ProjectPic2.png';
-import ProjectImage3 from './ProjectPic3.png';
+import ProjectImage1 from './Assets/ProjectPic1.png'; // Replace with your actual project image paths
+import ProjectImage2 from './Assets/ProjectPic2.png'; // Replace with your actual project image paths
+import ProjectImage3 from './Assets/ProjectPic3.png'; // Replace with your actual project image paths
 import './Portfolio.css';
 
 /**

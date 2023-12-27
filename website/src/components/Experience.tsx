@@ -1,7 +1,7 @@
 import React from 'react';
 import './Experience.css'; // Importing the CSS file for styling
 import { FaSearch } from 'react-icons/fa'; // Import the search icon from react-icons
-import RSALogo from './RSAC.jpg'; // Import the RSA logo image
+import RSALogo from './Assets/RSAC.jpg'; // Import the RSA logo image
 
 /**
  * Define the experiences to be displayed on the page.

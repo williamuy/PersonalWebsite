@@ -1,6 +1,6 @@
 import './HomePage.css';
-import WindCharacter from './WindCharacter.png';
-import LinkedInIcon from './LinkedInIcon.svg';
+import WindCharacter from './Assets/WindCharacter.png';
+import LinkedInIcon from './Assets/LinkedInIcon.svg';
 import GitHubIcon from './Assets/GitHubIcon.svg';
 import { MdLocationOn } from 'react-icons/md';
 import Typewriter from './Typewriter';

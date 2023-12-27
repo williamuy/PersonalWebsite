@@ -1,27 +1,29 @@
-/* Base import of Tailwind CSS */
+/* Base import of Tailwind CSS for utility-first styling */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
 /* Styling for the main hero container */
 .hero-container {
-  /* Adjust min-h-screen to change the minimum height of the container */
+  /* Full-screen height, centered content, with padding and relative positioning */
   @apply min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4 relative;
 }
 
 /* Content within the hero container */
 .hero-content {
+  /* Center text for all content within this div */
   @apply text-center;
 }
 
 /* Heading style */
 .hero-heading {
-  /* Adjust text-6xl to change the font size of the heading */
+  /* Large, bold heading with spacing below it */
   @apply text-6xl font-bold text-gray-800 mb-2;
 }
 
 /* Location display with icon */
 .hero-location {
+  /* Inline styling with gray text color and centered alignment */
   @apply text-gray-500;
   display: flex;
   align-items: center;
@@ -30,66 +32,100 @@
 
 /* Location icon margin */
 .hero-location svg {
-  /* Adjust margin-right to change the space to the right of the icon */
+  /* Space to the right of the location icon for separation from text */
   margin-right: 5px;
 }
 
 /* Subheading style */
 .hero-subheading {
-  /* Adjust text-lg to change the font size of the subheading */
+  /* Slightly larger than normal text for the subheading with top and bottom margins */
   @apply text-lg text-gray-700 my-4 max-w-lg mx-auto;
 }
 
 /* Styling for the wind character image */
 .wind-character {
-  /* Adjust w-64 to change the width of the image */
+  /* Specific width for the image with absolute positioning */
   @apply w-64 absolute top-10;
 }
 
 /* Button group styling */
 .button-group {
+  /* Flex container for buttons with space between and centered alignment */
   @apply flex justify-center items-center gap-4;
 }
 
 /* Styling for black and white buttons */
 .button-black, .button-white {
-  /* Adjust text-lg to change the font size of the buttons */
+  /* Standardized button styling with padding, rounded corners, and transition effects */
   @apply text-lg font-semibold py-3 px-6 rounded transition-colors duration-300;
 }
 
 .button-black {
+  /* Black background with white text for the 'Download CV' button */
   @apply bg-black text-white;
 }
 
 .button-white {
-  @apply bg-white text-black border-2 border-black ml-4;
-}
-
-/* Adjust the wind character's width and position */
-.wind-character {
-  width: 300px; /* Change the size of the image */
-  position: absolute;
-  top: 20px; /* Move the image up or down */
+  /* White background with black text and border for the 'Contact Info' button */
+  @apply bg-white text-black border-2 border-black;
 }
 
 /* Styling for social media buttons */
 .social-buttons {
+  /* Container for social buttons with top margin and centered alignment */
   @apply mt-4 flex justify-center items-center gap-4;
 }
 
 .social-button {
-  /* Adjust px-4 and py-2 to change the padding of the buttons */
+  /* Flex container for each social button with padding, rounded corners, and transition effects */
   @apply flex items-center justify-center px-4 py-2 border rounded text-sm font-medium transition-colors duration-300;
   text-decoration: none;
 }
 
 .social-icon {
-  /* Adjust h-5 and w-5 to change the size of the icons */
+  /* Sizing for social icons with margin to the right */
   @apply mr-2 h-5 w-5;
 }
 
 /* Hover effects for social buttons */
 .social-button:hover {
-  /* Adjust #ebebeb to change the hover color of the buttons */
+  /* Light grey background on hover for social buttons */
   background-color: #ebebeb;
+}
+
+/* Media query for responsiveness on smaller screens like mobile devices */
+@media (max-width: 599px) {
+  .button-group {
+    /* Stack the buttons vertically on mobile devices */
+    flex-direction: column; 
+    align-items: stretch; /* Stretch the buttons to fill the container */
+  }
+
+  .button-black, .button-white {
+    /* Make the buttons fill the container on mobile */
+    width: 100%; 
+    margin-left: 0; /* Remove any additional left margin */
+  }
+
+  .wind-character {
+    /* Adjust image size and positioning for mobile */
+    @apply w-48 top-3;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero-heading {
+    /* Adjust heading size for mobile */
+    @apply text-4xl;
+  }
+
+  .hero-subheading {
+    /* Adjust subheading size for mobile */
+    font-size: medium;
+  }
+
+  .social-buttons {
+    /* Adjust social icon alignment for mobile */
+    @apply justify-around;
+  }
 }
