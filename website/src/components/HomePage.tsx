@@ -7,7 +7,7 @@ import Typewriter from './Typewriter';
 import './animations.css';
 
 // Array of technologies to be displayed in the typewriter effect
-const technologies = ["TypeScript", "React", "Tailwind CSS", "DALL·E 3"];
+const technologies = ["TypeScript", "React", "Tailwind CSS", "Firebase", "Route 53", "DALL·E 3"];
 
 /**
  * Home component for the website.

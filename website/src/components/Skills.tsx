@@ -23,7 +23,7 @@ const SkillsPage = () => {
               <FaCode size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Frontend Development</h2>
-            <p className="text-md">Typescript, React, Tailwind CSS, HTML, Blazor</p>
+            <p className="text-md">React, Tailwind CSS, Node, Firebase, Blazor</p>
           </div>
           {/* Skill Card for Databases */}
           <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
@@ -39,7 +39,7 @@ const SkillsPage = () => {
               <FaServer size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Backend Development</h2>
-            <p className="text-md">FastAPI</p>
+            <p className="text-md">FastAPI, AWS Route 53</p>
           </div>
           {/* Data Science Card */}
           <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">

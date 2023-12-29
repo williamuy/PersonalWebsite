@@ -11,9 +11,9 @@ import './Portfolio.css';
 const projectData = [
   {
     title: 'Personal Landing Page',
-    description: 'This project is this very website. It will be updated with more projects and information as I advance in my career.',
+    description: 'This project was focused on creating a minimalistic but modern personal landing page. Project goals were learning best practices for web development and ensuring responsiveness / usability.',
     image: ProjectImage1,
-    technologies: ['TypeScript', 'React', 'Tailwind CSS', 'HTML', 'CSS', 'NodeJS', 'DALL·E 3'],
+    technologies: ['TypeScript', 'React', 'Tailwind CSS', 'NodeJS', 'Firebase', 'AWS Route 53', 'DALL·E 3', 'And More...'],
     status: 'Completed',
     codeLink: 'https://github.com/williamuy/PersonalWebsite'
   },
@@ -50,26 +50,27 @@ const Portfolio = () => {
           <h1 className="text-5xl text-gray-800 font-bold">Projects</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Map over the projectData array and create a card for each project */}
           {projectData.map((project, index) => (
-            <div key={index} className="project-card bg-white p-6 rounded-xl shadow-xl text-center">
-              <img src={project.image} alt={project.title} className="w-full h-auto mb-4 object-cover" />
-              <h2 className="text-xl font-semibold">{project.title}</h2>
-              <p className="text-md mb-4">{project.description}</p>
-              <ul className="tech-list mb-4">
-                {/* Map over the technologies array and create a list item for each technology */}
-                {project.technologies.map((tech, index) => (
-                  <li key={index} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    {tech}
-                  </li>
-                ))}
-              </ul>
-              {/* If the project status is 'Ongoing', display a status badge. Otherwise, display a link to the project code. */}
-              {project.status === 'Ongoing' ? (
-                <span className="px-3 py-1 text-sm bg-yellow-100 text-yellow-800 rounded-full font-semibold">Ongoing</span>
-              ) : (
-                <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="btn-code">View Code</a>
-              )}
+            <div key={index} className="project-card bg-white p-6 rounded-xl shadow-xl text-center flex flex-col justify-between h-full">
+              <div>
+                <img src={project.image} alt={project.title} className="w-full h-auto mb-4 object-cover" />
+                <h2 className="text-xl font-semibold">{project.title}</h2>
+                <p className="text-md mb-4">{project.description}</p>
+                <ul className="tech-list mb-4">
+                  {project.technologies.map((tech, index) => (
+                    <li key={index} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-4">
+                {project.status === 'Ongoing' ? (
+                  <span className="status-badge">Ongoing</span>
+                ) : (
+                  <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="btn-code">View Code</a>
+                )}
+              </div>
             </div>
           ))}
         </div>
