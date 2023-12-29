@@ -31,7 +31,7 @@ const AboutPage = () => {
         {/* Description section */}
         <p className="text-gray-600 leading-relaxed mt-8 text-center max-w-2xl mx-auto">
           I'm currently a Senior at the University of Washington, Bothell Campus, set to graduate in December 2024.
-          With my passion for both software and business analytics, I'm looking to build a broad skillset that will allow me to be a valuable asset to any team.
+          With my passion for both innovative software and data science, I'm looking to build a broad skillset that will allow me to be a valuable asset to any team.
         </p>
       </main>
     </div>

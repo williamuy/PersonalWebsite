@@ -1,3 +1,33 @@
 .tech-list li {
     cursor: default;
   }
+
+  /* Portfolio.css */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.status-badge, .btn-code {
+  display: block;
+  text-align: center;
+  padding: 8px 16px;
+  margin: 0 auto;
+}
+
+.btn-code {
+  background-color: #58a3d1; /* Example button color, change as needed */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.status-badge {
+  background-color: #FFEB3B; /* Example badge color, change as needed */
+  color: black;
+  border-radius: 4px;
+  cursor: default;
+}
+
+/* Add styles for .tech-list and other elements as needed */
