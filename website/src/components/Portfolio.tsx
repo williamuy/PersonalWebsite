@@ -11,9 +11,9 @@ import './Portfolio.css';
 const projectData = [
   {
     title: 'Personal Landing Page',
-    description: 'This project is this very website. It will be updated with more projects and information as I advance in my career.',
+    description: 'This project was focused on creating a minimalistic but modern personal landing page. Project goals were learning best practices for web development and ensuring responsiveness / usability.',
     image: ProjectImage1,
-    technologies: ['TypeScript', 'React', 'Tailwind CSS', 'HTML', 'CSS', 'NodeJS', 'DALL·E 3'],
+    technologies: ['TypeScript', 'React', 'Tailwind CSS', 'NodeJS', 'Firebase', 'AWS Route 53', 'DALL·E 3', 'And More...'],
     status: 'Completed',
     codeLink: 'https://github.com/williamuy/PersonalWebsite'
   },
