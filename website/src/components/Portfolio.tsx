@@ -13,7 +13,7 @@ const projectData = [
     title: 'Personal Landing Page',
     description: 'This project is this very website. It will be updated with more projects and information as I advance in my career.',
     image: ProjectImage1,
-    technologies: ['TypeScript', 'React', 'Tailwind CSS', 'HTML', 'CSS', 'DALL·E 3'],
+    technologies: ['TypeScript', 'React', 'Tailwind CSS', 'HTML', 'CSS', 'NodeJS', 'DALL·E 3'],
     status: 'Completed',
     codeLink: 'https://github.com/williamuy/PersonalWebsite'
   },

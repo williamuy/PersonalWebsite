@@ -45,8 +45,33 @@
 /* Styling for the wind character image */
 .wind-character {
   /* Specific width for the image with absolute positioning */
-  @apply w-64 absolute top-10;
+  @apply w-48 absolute top-1 sm:w-64 sm:top-3;
+  left: 50%;
+  transform: translateX(-50%);
+  order: -1; /* Ensure the image is always at the first */
 }
+
+/* Adjust laptop */
+@media (min-width: 800px) {
+  .wind-character {
+    @apply w-72 top-8; /* Adjust image size and positioning for large screens */
+  }
+}
+
+/* Adjust desktop */
+@media (min-width: 1919px) {
+  .wind-character {
+    @apply w-72 top-24; /* Adjust image size and positioning for large screens */
+  }
+}
+
+/* Adjust large monitor */
+@media (min-width: 2000px) {
+  .wind-character {
+    @apply w-72 top-64; /* Adjust image size and positioning for large screens */
+  }
+}
+
 
 /* Button group styling */
 .button-group {
@@ -105,13 +130,6 @@
     /* Make the buttons fill the container on mobile */
     width: 100%; 
     margin-left: 0; /* Remove any additional left margin */
-  }
-
-  .wind-character {
-    /* Adjust image size and positioning for mobile */
-    @apply w-48 top-3;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   .hero-heading {

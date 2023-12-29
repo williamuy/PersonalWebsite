@@ -44,7 +44,7 @@ const ExperiencePage = () => {
     <div id="experience" className="bg-gray-100 py-8">
       <main className="mx-auto px-4 max-w-7xl">
         <div className="text-center mb-12">
-          <p className="text-lg text-gray-600">Professional Timeline</p>
+          <p className="text-lg text-gray-600">Professional</p>
           <h1 className="text-5xl text-gray-800 font-bold">Experience</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

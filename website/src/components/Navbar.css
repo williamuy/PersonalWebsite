@@ -29,7 +29,7 @@
   /* Adjust box-shadow to change the depth effect of the button */
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   /* Adjust margin-top and margin-right to change the position of the button */
-  margin-top: 20px;
+  margin-top: 5px;
   margin-right: 20px;
   /* Adjust right to ensure the button is not too far left */
   right: 5px;
@@ -51,7 +51,7 @@
   width: auto;
   text-align: left;
   /* Adjust margin-top to change the position of the dropdown relative to the navbar */
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 /* Dropdown links */
