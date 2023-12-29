@@ -1,20 +1,24 @@
+/* This is the main container for your app */
 .App {
   text-align: center;
 }
 
+/* This is the logo of your app */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* This is the animation for your logo */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* This is the header of your app */
 .App-header {
-  background-color: #282c34;
+  background-color: #f0f0f0; /* Change this to your desired color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,10 +28,12 @@
   color: white;
 }
 
+/* This is the link in your app */
 .App-link {
   color: #61dafb;
 }
 
+/* This is the animation for your logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +41,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* This is the body of your website */
+body {
+  background-color: #f0f0f0; /* Change this to your desired color */
 }
