@@ -13,7 +13,7 @@ const experiences = [
     company: 'RSA Conference',
     companyLogo: RSALogo,
     duration: 'June 2023 - August 2023',
-    description: `On the technology team, we worked on building an information system using C#, Blazor UI, DevExpress, and more. This system served as a realtime information hub for all stakeholders involved in the conference processes.
+    description: `On the technology team, we worked on building an information system using C#, Blazor UI, DevExpress, and more. This system served as a realtime information hub for all stakeholders involved, streamlining data from multiple sources.
 
 Additionally, on the production team, I created a python script to automate the data entry process of extracting conference information off hard drives.`,
     technologies: ['C#', 'Blazor UI', 'DevExpress', '.NET', 'Python', 'Git', 'Version Control'], // List of technologies used in this role

@@ -147,3 +147,8 @@
     @apply justify-around;
   }
 }
+
+.typewriter-container {
+  /* Centered container for typewriter effect */
+  cursor: default;
+}
