@@ -54,7 +54,7 @@
 /* Adjust laptop */
 @media (min-width: 800px) {
   .wind-character {
-    @apply w-72 top-8; /* Adjust image size and positioning for large screens */
+    @apply w-72 top-5; /* Adjust image size and positioning for large screens */
   }
 }
 
