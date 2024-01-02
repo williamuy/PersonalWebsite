@@ -18,7 +18,7 @@ const projectData = [
   // Project 2
   {
     title: 'Laptop Price Analysis',
-    description: 'Developed a web scraper to capture key specifications of laptops from Best Buy. Post-analysis, the project transitioned into a data visualization phase, producing clear, insightful graphics that elucidate laptop market trends and specifications."',
+    description: 'Developed a web scraper to capture key specifications of laptops from Best Buy. Post-analysis, the project transitioned into a data visualization phase, producing clear, insightful graphics that elucidate laptop market trends and specifications.',
     image: ProjectImage2,
     technologies: ['Numpy', 'Pandas', 'Matplotlib', 'Seaborn', 'BeautifulSoup', 'Selenium', 'And More...'],
     status: 'Completed',
