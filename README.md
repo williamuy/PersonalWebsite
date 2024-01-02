@@ -12,10 +12,12 @@ Welcome to the repository for my personal landing page. This website showcases m
 
 ## Technologies Used
 - Typescript
+- HTML
+- CSS
 - React
 - Node
 - Tailwind CSS
 - Firebase
 - AWS Route 53
-- DALL·E 3 
+- DALL·E 3
 
