@@ -2,6 +2,7 @@
 
 Welcome to the repository for my personal landing page. This website showcases my skills, projects, and experience as a student specializing in Data Science and Software Development.
 
+View the Website Here: https://williamuyeta.com/
 ## Features
 
 - **Responsive Design**: The website is fully responsive and optimized for all device sizes.
