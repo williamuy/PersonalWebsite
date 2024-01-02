@@ -9,7 +9,6 @@ Welcome to the repository for my personal landing page. This site is a reflectio
 - **Responsive Design**: Crafted for optimal user experience across various devices.
 - **Interactive Typewriter Effect**: A dynamic presentation of the technologies and tools that empower this website.
 - **Downloadable Resume**: A direct link for downloading my resume is provided for potential employers and collaborators.
-- **Contact Portal**: A dedicated section for visitors to reach out and connect.
 - **Quick Contact**: A simple and fast way to send me an email using the mailto link.
 
 ## Technologies Used
