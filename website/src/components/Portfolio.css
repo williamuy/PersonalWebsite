@@ -1,15 +1,16 @@
 .tech-list li {
-    cursor: default;
-  }
+  cursor: default;
+}
 
-  /* Portfolio.css */
+/* Portfolio.css */
 .project-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.status-badge, .btn-code {
+.status-badge,
+.btn-code {
   display: block;
   text-align: center;
   padding: 8px 16px;
@@ -24,10 +25,21 @@
 }
 
 .status-badge {
-  background-color: #FFEB3B; /* Example badge color, change as needed */
+  background-color: #ffeb3b; /* Example badge color, change as needed */
   color: black;
   border-radius: 4px;
   cursor: default;
 }
 
-/* Add styles for .tech-list and other elements as needed */
+.btn-demo {
+  background-color: #d158a3; /* Same blue color as the View Code button */
+  color: white; /* Ensures text is readable on the blue background */
+  padding: 12px 16px; /* Smaller padding for a small button */
+  text-decoration: none;
+  border-radius: 20px; /* Increased border-radius for a pill-like shape */
+  margin-top: 8px; /* Space above the demo button, if needed */
+  margin-bottom: 8px; /* Consistent spacing between buttons */
+  display: inline-block; /* Ensures proper spacing around the button */
+  font-size: 0.75rem; /* Smaller font size for the small button */
+  font-weight: 500; /* Optional: Adjust the font weight as needed */
+}
