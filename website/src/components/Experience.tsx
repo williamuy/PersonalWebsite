@@ -1,42 +1,75 @@
-import React from 'react';
-import './Experience.css'; // Importing the CSS file for styling
-import { FaSearch } from 'react-icons/fa'; // Import the search icon from react-icons
-import RSALogo from './Assets/RSAC.jpg'; // Import the RSA logo image
-
+import { FaSearch } from "react-icons/fa"; // Import the search icon from react-icons
+import TeachLogo from "./Assets/247logo.png"; // Import the Teach logo image
+import AscendLogo from "./Assets/Ascend.png"; // Import the Ascend logo image
+import RSALogo from "./Assets/RSAC.jpg"; // Import the RSA logo image
+import "./Experience.css"; // Importing the CSS file for styling
 /**
  * Define the experiences to be displayed on the page.
  * Each experience is an object with properties for the role, company, companyLogo, duration, description, and technologies.
  */
 const experiences = [
   {
-    role: 'Technology / Production Intern',
-    company: 'RSA Conference',
+    role: "Data Management Intern",
+    company: "Ascend Leadership",
+    companyLogo: AscendLogo,
+    duration: "February 2024 - Present",
+    description: `Currently Collaborating on an extensive research project analyzing diversity issues among Pan-Asian professionals in various workplaces across the US. 
+
+    
+    `,
+    technologies: ["Python", "Excel", "More to come"],
+  },
+  {
+    role: "Web Development Superstar",
+    company: "24/7 Teach",
+    companyLogo: TeachLogo,
+    duration: "Janruary 2024 - Present",
+    description: `Leveraged JavaScript, jQuery, and CSS to revamp the user interface of the main website, resulting in improved navigation and increased user engagement. 
+
+    Currently spearheading the creation of the new website utilizing JavaScript, React, Clever & other technologies to modernize the 24/7 Teach Brand.`,
+
+    technologies: ["JavaScript", "jQuery", "React", "Clever", "CSS"],
+  },
+
+  {
+    role: "Technology / Production Intern",
+    company: "RSA Conference",
     companyLogo: RSALogo,
-    duration: 'June 2023 - August 2023',
+    duration: "June 2023 - August 2023",
     description: `On the technology team, we worked on building an information system using C#, Blazor UI, DevExpress, and more. This system served as a realtime information hub for all stakeholders involved, streamlining data from multiple sources.
 
 Additionally, on the production team, I created a python script to automate the data entry process of extracting conference information off hard drives.`,
-    technologies: ['C#', 'Blazor UI', 'DevExpress', '.NET', 'Python', 'Git', 'Version Control'], // List of technologies used in this role
+    technologies: [
+      "C#",
+      "Blazor UI",
+      "DevExpress",
+      ".NET",
+      "Python",
+      "Git",
+      "Version Control",
+    ], // List of technologies used in this role
   },
   {
-    role: 'Open to Opportunities',
-    company: 'Currently Seeking New Role',
+    role: "Open to Opportunities",
+    company: "Currently Seeking New Roles for Summer 2024",
     icon: (
       <span className="text-gray-500">
         <FaSearch size={32} />
       </span>
     ),
-    duration: 'Present',
-    description: 'Actively looking for a role that fits my skills in software development and data science. Keen on roles that provide opportunities for growth and learning.',
+    duration: "Present",
+    description:
+      "Actively looking for a role that fits my skills in software development and data science. Keen on roles that provide opportunities for growth and learning.",
     technologies: [], // No specific technologies for this role
   },
+
   // ... add more experiences as needed
 ];
 
 /**
  * ExperiencePage component for the website.
  * It displays a list of professional experiences.
- * 
+ *
  * @returns JSX.Element The ExperiencePage component as a JSX Element.
  */
 const ExperiencePage = () => {
@@ -50,24 +83,38 @@ const ExperiencePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Map over the experiences array and create a card for each experience */}
           {experiences.map((exp, index) => (
-            <div key={index} className="experience-card bg-white p-6 rounded-xl shadow-xl transform transition duration-500 hover:scale-105 relative">
+            <div
+              key={index}
+              className="experience-card bg-white p-6 rounded-xl shadow-xl transform transition duration-500 hover:scale-105 relative"
+            >
               {/* If there's a company logo, display it. Otherwise, display the icon */}
               {exp.companyLogo ? (
-                <img src={exp.companyLogo} alt={`${exp.company} Logo`} className="absolute top-0 right-0 mt-4 mr-4 w-16 h-16 object-contain" />
+                <img
+                  src={exp.companyLogo}
+                  alt={`${exp.company} Logo`}
+                  className="absolute top-0 right-0 mt-4 mr-4 w-16 h-16 object-contain"
+                />
               ) : (
-                <div className="absolute top-0 right-0 mt-4 mr-4 w-16 h-16 flex justify-center items-center">{exp.icon}</div>
+                <div className="absolute top-0 right-0 mt-4 mr-4 w-16 h-16 flex justify-center items-center">
+                  {exp.icon}
+                </div>
               )}
               <h2 className="text-xl font-semibold">{exp.role}</h2>
               <h3 className="text-lg text-gray-600">{exp.company}</h3>
               <p className="text-md text-gray-500">{exp.duration}</p>
               {/* Split the description into paragraphs and display each one */}
-              {exp.description.split('\n').map((paragraph, idx) => (
-                <p key={idx} className="text-md mt-4 whitespace-pre-line">{paragraph}</p>
+              {exp.description.split("\n").map((paragraph, idx) => (
+                <p key={idx} className="text-md mt-4 whitespace-pre-line">
+                  {paragraph}
+                </p>
               ))}
               {/* Map over the technologies array and create a tag for each technology */}
               <div className="tech-list mt-4">
                 {exp.technologies.map((tech, index) => (
-                  <span key={index} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  <span
+                    key={index}
+                    className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >
                     {tech}
                   </span>
                 ))}
