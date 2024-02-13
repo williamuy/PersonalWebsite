@@ -16,6 +16,7 @@ const experiences = [
     description: `Currently Collaborating on an extensive research project analyzing diversity issues among Pan-Asian professionals in various workplaces across the US. 
 
     
+
     `,
     technologies: ["Python", "Excel", "More to come"],
   },
@@ -23,7 +24,7 @@ const experiences = [
     role: "Web Development Superstar",
     company: "24/7 Teach",
     companyLogo: TeachLogo,
-    duration: "Janruary 2024 - Present",
+    duration: "january 2024 - Present",
     description: `Leveraged JavaScript, jQuery, and CSS to revamp the user interface of the main website, resulting in improved navigation and increased user engagement. 
 
     Currently spearheading the creation of the new website utilizing JavaScript, React, Clever & other technologies to modernize the 24/7 Teach Brand.`,
