@@ -1,13 +1,12 @@
-import React from 'react';
-import HomePage from './components/HomePage';
-import About from './components/About';
-import Skills from './components/Skills';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Navbar from './components/Navbar';
-import Experience from './components/Experience';
-import Footer from './components/Footer';
-import './App.css'
+import "./App.css";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
+import HomePage from "./components/HomePage";
+import Navbar from "./components/Navbar";
+import Portfolio from "./components/Portfolio";
+import Skills from "./components/Skills";
 
 const App = () => {
   return (

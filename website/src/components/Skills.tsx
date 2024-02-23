@@ -1,11 +1,17 @@
-import React from 'react';
-import './Skills.css'; // Ensure you have this CSS file for any additional styles
-import { FaCode, FaDatabase, FaServer, FaChartBar, FaPython, FaBookOpen } from 'react-icons/fa';
+import {
+  FaBookOpen,
+  FaChartBar,
+  FaCode,
+  FaDatabase,
+  FaPython,
+  FaServer,
+} from "react-icons/fa";
+import "./Skills.css"; // Ensure you have this CSS file for any additional styles
 
 /**
  * SkillsPage component for the website.
  * It displays a list of skills.
- * 
+ *
  * @returns JSX.Element The SkillsPage component as a JSX Element.
  */
 const SkillsPage = () => {
@@ -23,15 +29,19 @@ const SkillsPage = () => {
               <FaCode size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Frontend Development</h2>
-            <p className="text-md">React, Tailwind CSS, Node, Firebase, Blazor</p>
+            <p className="text-md">
+              React, Tailwind CSS, Node, Firebase, Blazor
+            </p>
           </div>
           {/* Skill Card for Databases */}
           <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
             <span className="text-green-600">
               <FaDatabase size={50} />
             </span>
-            <h2 className="text-xl font-semibold mt-4">Databases</h2>
-            <p className="text-md">MySQL</p>
+            <h2 className="text-xl font-semibold mt-4">Cloud Technologies</h2>
+            <p className="text-md">
+              Azure Data Factory, Data Lake Gen 2, Databricks, Synapse Analytics
+            </p>
           </div>
           {/* Skill Card for Backend */}
           <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
@@ -39,7 +49,7 @@ const SkillsPage = () => {
               <FaServer size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Backend Development</h2>
-            <p className="text-md">FastAPI, AWS Route 53</p>
+            <p className="text-md">Flask, AWS Route 53</p>
           </div>
           {/* Data Science Card */}
           <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
@@ -47,14 +57,18 @@ const SkillsPage = () => {
               <FaChartBar size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Data Science</h2>
-            <p className="text-md">Pandas, Numpy, Matplotlib, Seaborn </p>
+            <p className="text-md">
+              Pandas, Numpy, Matplotlib, Seaborn, PySpark{" "}
+            </p>
           </div>
           {/* Programming Languages Card */}
           <div className="skills-card bg-white p-6 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105">
             <span className="text-yellow-600">
               <FaPython size={50} />
             </span>
-            <h2 className="text-xl font-semibold mt-4">Programming Languages</h2>
+            <h2 className="text-xl font-semibold mt-4">
+              Programming Languages
+            </h2>
             <p className="text-md">Python, TypeScript, Java, SQL</p>
           </div>
           {/* Current Learning Card */}
@@ -63,7 +77,7 @@ const SkillsPage = () => {
               <FaBookOpen size={50} />
             </span>
             <h2 className="text-xl font-semibold mt-4">Current Learning</h2>
-            <p className="text-md">Neural Networks, MongoDB, AWS</p>
+            <p className="text-md">Neural Networks, Azure</p>
           </div>
         </div>
       </main>
