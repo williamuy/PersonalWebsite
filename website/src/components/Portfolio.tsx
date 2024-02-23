@@ -41,22 +41,23 @@ const projectData = [
     codeLink: "https://github.com/williamuy/Laptop-Analysis",
   },
   {
-    title: "Modern Todo List",
+    title: "Data Pipeline Project (Azure)",
     description:
-      "Currently creating a modernized todo list application to familiarize myself with Next.js, utilizing component libraries, and full stack development.",
+      "Used the Tokyo Olympic dataset from Kaggle to ingest data into Azure and created an interactive dashboard. Within the project, I created a full end to end data pipeline using the Azure workspace. I also utilized PySpark to transform the data, then created SQL queries for catered datasets for visualization / analysis.",
     image: ProjectImage3,
     technologies: [
-      "TypeScript",
-      "Tailwind CSS",
-      "DaisyUI",
-      "Next.js",
-      "Clerk",
-      "Supabase",
-      "And More...",
+      "Python",
+      "PySpark",
+      "SQL",
+      "Azure Data Factory",
+      "Data Lake Gen 2",
+      "Databricks",
+      "Synapse Analytics",
+      "Power BI",
     ],
     status: "Completed",
-    codeLink: "https://github.com/williamuy/todolistapp",
-    demoLink: "https://todo-list-delta-plum.vercel.app/", // This is the new property for the demo link
+    codeLink: "https://github.com/williamuy/TokyoOlympicsDataEngineering",
+    demoLink: "https://www.youtube.com/watch?v=uwIzjCdpQ5M",
   },
 ];
 
