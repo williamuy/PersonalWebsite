@@ -1,6 +1,6 @@
 import ProjectImage1 from "./Assets/ProjectPic1.png"; // Replace with your actual project image paths
 import ProjectImage2 from "./Assets/ProjectPic2.png"; // Replace with your actual project image paths
-import ProjectImage3 from "./Assets/ProjectPic3.png"; // Replace with your actual project image paths
+import ProjectImage4 from "./Assets/ProjectPic3.png"; // Replace with your actual project image paths
 import "./Portfolio.css";
 
 // Define the data for each project with an additional demoLink for project 3
@@ -44,7 +44,7 @@ const projectData = [
     title: "Data Pipeline Project (Azure)",
     description:
       "Used the Tokyo Olympic dataset from Kaggle to ingest data into Azure and created an interactive dashboard. Within the project, I created a full end to end data pipeline using the Azure workspace. I also utilized PySpark to transform the data, then created SQL queries for catered datasets for visualization / analysis.",
-    image: ProjectImage3,
+    image: ProjectImage4,
     technologies: [
       "Python",
       "PySpark",
